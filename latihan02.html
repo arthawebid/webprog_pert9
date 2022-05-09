@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 02</title>
+    <script>
+        alert("Selamat Belajar JavaScript")
+    </script>
+</head>
+<body>
+    
+    <div id="pesan">
+        Menampilkan Pesan alert saat page di load
+    </div>
+
+    <input type="button" name="tmb01" value=" Klik " onclick="ubahwarna()">
+    <button onclick="alert('Yakin akan menghapus Data?')">hapus Data</button>
+    <br>
+    Hapus Data klik <a href="hapusdata.php" onclick="return confirm('Yakin akan menghapus data ini?')">Hapus</a>
+
+    <script>
+        function ubahwarna(){
+            document.getElementById("pesan").style.color="#fcb46f"
+            document.getElementById("pesan").style.fontWeight="bold"
+            document.getElementById("pesan").style.fontFamily="tahoma"
+            document.getElementById("pesan").style.fontSize="18"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JavaScript 03</title>
+</head>
+<body>
+    
+    <div id="txpesan">Isikan Pesan</div>
+    <br>
+    <input type="text" name="txNIM" id="txNIM">
+    <br>
+    <input type="text" name="txtulisan" id="txtulisan">
+    <button onclick="UT()">Ubah Text</button>
+
+    <script>
+        function UT(){
+            let tx = document.getElementById("txtulisan").value
+            document.getElementById("txpesan").innerHTML = tx
+            document.getElementById("txNIM").value=tx
+        }
+    </script>
+</body>
+</html>
